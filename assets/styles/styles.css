@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'customFont';
+    src: url('./../fonts/font.ttf');
+}  
+
+body {
+    font-family: 'customFont', Arial;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+  
+#game {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    background-color: #282d34;
+}
+  
+#ball, #leftPaddle, #rightPaddle {
+    position: absolute;
+    background-color: #fff;
+    margin: 2px;
+}
+  
+#ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+  
+#leftPaddle, #rightPaddle {
+    width: 20px;
+    height: 100px;
+}
+  
+#leftPaddle {
+    left: 0;
+}
+  
+#rightPaddle {
+    right: 0;
+}
+  
